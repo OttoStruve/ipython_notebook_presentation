@@ -1,3 +1,6 @@
+This is a fork of [Joshua Barrat's](http://serialized.net/) ipython notebook presentation, which I'll be adapting for a presentation at our Department of Astronomy Grad Student - Postdoc Seminar.  Josh's original readme is included below:
+
+
 Welcome to the materials for the IPython Notebook presentation!
 
 You won't find a typical slide deck here; much of the presentation consisted of live demos.
