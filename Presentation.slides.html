@@ -1725,7 +1725,9 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="stretch"><img src="PresentationImages/CoverArt.jpg"/></div>
+<div class="stretch">
+<img src="PresentationImages/CoverArt.jpg"/>
+</div>
 </div>
 </div>
 </div></section>
@@ -1739,9 +1741,65 @@ div.output_prompt {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="if-you-got-here-via-a-link-to-the-slides">If you got here via a link to the slides</h1>
 <p>Please check out the full git repository for the presentation notebook as well as other example notebooks.</p>
-<p><a href="https://github.com/jbarratt/ipython_notebook_presentation/tree/linuxcon">https://github.com/jbarratt/ipython_notebook_presentation/tree/linuxcon</a></p>
+<p><a href="https://github.com/OttoStruve/ipython_notebook_presentation/tree/gsps">https://github.com/OttoStruve/ipython_notebook_presentation/tree/gsps</a></p>
 </div>
 </div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="this-presentation-is-actually-adapted-from-one-given-by-joshua-barratt-at-linuxcon">This presentation is actually adapted from one given by <a href="http://serialized.net/2014/09/ipython-notebook-storytelling/">Joshua Barratt</a> at LinuxCon</h1>
+<ul>
+<li>He shared all his materials on Github</li>
+<li>I forked his work and adapted it for this presentation :-)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[1]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;XkXXpaVpNSc&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[1]:</div>
+
+<div class="output_html rendered_html output_subarea output_pyout">
+
+        <iframe
+            width="400"
+            height=300"
+            src="https://www.youtube.com/embed/XkXXpaVpNSc"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div><div style=display:none>
     
 <div class="cell border-box-sizing text_cell rendered">
@@ -1751,42 +1809,42 @@ div.output_prompt {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="outline">Outline</h1>
 <ul>
-<li>What is the notebook <ul>
-<li>OMG it&#39;s the best</li>
+<li>What is the notebook
+<ul>
+<li>OMG it's the best</li>
 <li>Quick Demo</li>
 <li>IPython Ecosystem (2.0 Caveat)</li>
-</ul>
-</li>
-<li>Why is it awesome<ul>
+</ul></li>
+<li>Why is it awesome
+<ul>
 <li>Literate Code</li>
 <li>Sharing</li>
-<li>Rapid Prototyping/Exploring/Learning<ul>
+<li>Rapid Prototyping/Exploring/Learning
+<ul>
 <li><code>Terminal(Editor &lt;-&gt; Renderer) -&gt; Email</code> vs Cyclic</li>
-</ul>
-</li>
+</ul></li>
 <li>Blogging</li>
-</ul>
-</li>
-<li>Workflows (edit, share, publish)<ul>
+</ul></li>
+<li>Workflows (edit, share, publish)
+<ul>
 <li>Under the hood <code>ipynb</code></li>
 <li>HTML</li>
 <li>PDF</li>
 <li>Gist + nbviewer</li>
-</ul>
-</li>
-<li>Demos<ul>
+</ul></li>
+<li>Demos
+<ul>
 <li>Code Mentorship (sets, objects, katas)</li>
 <li>Runbooks</li>
 <li>Log analysis <a href="http://nbviewer.ipython.org/github/koldunovn/nk_public_notebooks/blob/master/Apache_log.ipynb">epic</a></li>
 <li>Shell scripting demo</li>
 <li>Churn analysis</li>
 <li><a href="http://www.brendangregg.com/HeatMaps/latency.html">Latency Heatmap</a></li>
-</ul>
-</li>
-<li>Extending<ul>
+</ul></li>
+<li>Extending
+<ul>
 <li><a href="https://github.com/ipython-contrib/IPython-notebook-extensions/wiki">Extensions</a></li>
-</ul>
-</li>
+</ul></li>
 <li>It came from inside the presentation!</li>
 </ul>
 </div>
@@ -1801,9 +1859,11 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="what-is-the-notebook-">What is the notebook?</h1>
-<h2 id="a-browser-based-interactive-computing-environment-">A &quot;browser-based interactive computing environment&quot;</h2>
-<div class="stretch"><img src="PresentationImages/NotebookScreenshot.png"/></div>
+<h1 id="what-is-the-notebook">What is the notebook?</h1>
+<h2 id="a-browser-based-interactive-computing-environment">A &quot;browser-based interactive computing environment&quot;</h2>
+<div class="stretch">
+<img src="PresentationImages/NotebookScreenshot.png"/>
+</div>
 </div>
 </div>
 </div></section>
@@ -1815,9 +1875,9 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="why-are-we-talking-about-it-today-">Why are we talking about it today?</h1>
+<h1 id="why-are-we-talking-about-it-today">Why are we talking about it today?</h1>
 <ul>
-<li>Extremely useful tool, but not well enough known outside Academia/Science.</li>
+<li>Extremely useful tool, like <strong>IT WILL CHANGE YOUR LIFE</strong> useful.</li>
 <li>Makes the (powerful) python data/science/module ecosystem even more powerful</li>
 <li>If you code, (even not in python), sysadmin, write documentation, blog, do any analysis or visualization, you might get a lot out of the notebook.</li>
 </ul>
@@ -1832,42 +1892,11 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="why-are-you-talking-about-it-today-">Why are <em>you</em> talking about it today?</h1>
-<h4 id="i-fell-in-love-">I fell in love.</h4>
-<div class="stretch"><img src="PresentationImages/LoveTheNotebook.png"/></div>
-
-<p><small><em>Apologies to my beautiful baby daughter for photoshopping her out</em></small></p>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="why-it-s-great">Why It&#39;s Great</h1>
+<h1 id="why-its-great">Why It's Great</h1>
 <p>These attributes will come up over and over as we explore this tool.</p>
-<div class="stretch"><img src="PresentationImages/LIVI.png"/></div>
+<div class="stretch">
+<img src="PresentationImages/LIVI.png"/>
 </div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="-literate-">&quot;Literate&quot;</h1>
-<p>The other attributes will be clear, but a word on Literate (apologies to Knuth for the oversimplification)</p>
-<div class="stretch"><img src="PresentationImages/Literate.png"/></div>
-
-<p>This is a big part of where the title comes from: it&#39;s about the story more than the software. (Because of inline output, Notebook may even be &#39;SuperLiterate&#39;.)</p>
-<p><strong>Update</strong>: IPython&#39;s founder, <a href="http://twitter.com/fperez_org">@fperez_org</a> kindly pointed me to a blog post of his; they prefer the term <a href="http://blog.fperez.org/2013/04/literate-computing-and-computational.html">Literate Computing</a>.</p>
 </div>
 </div>
 </div></section>
@@ -1879,12 +1908,12 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="enough-meta-let-s-install-it-">Enough Meta: Let&#39;s Install It.</h1>
-<div class="stretch"><img src="PresentationImages/01_Install.png"/></div>
-
-<p><code>pip install ipython[all]</code>? That was easy.*</p>
-<pre><code>*Dependencies can be painful, YMMV.
-</code></pre>
+<h1 id="literate-computing">&quot;Literate Computing&quot;</h1>
+<div class="stretch">
+<img src="PresentationImages/Literate.png"/>
+</div>
+<p>This is a big part of where the title comes from: it's about the story more than the software. (Because of inline output, Notebook may even be 'SuperLiterate'.)</p>
+<p>IPython's founder, Fernando Perez <span class="citation">[@fperez_org]</span>(http://twitter.com/fperez_org) has blog post on this; they prefer the term <a href="http://blog.fperez.org/2013/04/literate-computing-and-computational.html">Literate Computing</a>.</p>
 </div>
 </div>
 </div></section>
@@ -1896,10 +1925,47 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="run-ipython-notebook-">Run &#39;ipython notebook&#39;</h1>
-<div class="stretch"><img src="PresentationImages/03_Process.png"/></div>
-
-<p><strong>Clarification</strong>: <a href="https://twitter.com/fperez_org/status/502656111561146368">As @fperez_org pointed out</a>, the kernel actually only speaks <a href="http://zeromq.org/">zeromq</a>, the notebook process handles browser communications.</p>
+<h1 id="enough-meta-lets-install-it">Enough Meta: Let's Install It:</h1>
+<h2 id="install-anaconda">Install Anaconda</h2>
+<ul>
+<li>Everything* you need gets installed</li>
+<li>Easy to install additional packages using the <code>conda</code> utility</li>
+<li><p>Even more packages available through <a href="https://binstar.org/">Binstar</a></p>
+<p>*Well, almost everything</p></li>
+</ul>
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="if-youre-morally-opposed-to-continuum-analytics">If you're morally opposed to <a href="http://continuum.io/">Continuum Analytics</a></h1>
+<h1 id="you-can-use-pip-install-too.">you can use <code>pip install</code> too.</h1>
+<div class="stretch">
+<img src="PresentationImages/01_Install.png"/>
+</div>
+<p><code>pip install ipython[all]</code> Simple as that.*</p>
+<pre><code>*Dependencies can be painful, YMMV.</code></pre>
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="run-ipython-notebook">Run 'ipython notebook'</h1>
+<div class="stretch">
+<img src="PresentationImages/03_Process.png"/>
+</div>
 </div>
 </div>
 </div></section>
@@ -1912,7 +1978,9 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="browser-launches">Browser Launches</h1>
-<div class="stretch"><img src="PresentationImages/04_Tree.png"/></div>
+<div class="stretch">
+<img src="PresentationImages/04_Tree.png"/>
+</div>
 </div>
 </div>
 </div></section>
@@ -1925,9 +1993,10 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="build-a-notebook">Build a notebook</h1>
-<div class="stretch"><img src="PresentationImages/05_Notebook.png"/></div>
-
-<p>(Actually, it&#39;s a process per open notebook.)</p>
+<div class="stretch">
+<img src="PresentationImages/05_Notebook.png"/>
+</div>
+<p>(Actually, it's a process per open notebook.)</p>
 </div>
 </div>
 </div></section>
@@ -1940,7 +2009,9 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="run-a-cell">Run A Cell</h1>
-<div class="stretch"><img src="PresentationImages/07_Websocket.png"/></div>
+<div class="stretch">
+<img src="PresentationImages/07_Websocket.png"/>
+</div>
 </div>
 </div>
 </div></section>
@@ -1952,8 +2023,10 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="no-need-to-be-local-">No Need To Be Local...</h1>
-<div class="stretch"><img src="PresentationImages/06_ToTheCloud.png"/></div>
+<h1 id="no-need-to-be-local...">No Need To Be Local...</h1>
+<div class="stretch">
+<img src="PresentationImages/06_ToTheCloud.png"/>
+</div>
 </div>
 </div>
 </div></section>
@@ -1966,7 +2039,11 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="demo-time">Demo Time</h1>
-<p><a href="http://127.0.0.1:8888/notebooks/Quick%20Demo.ipynb"><div class="stretch"><img src="PresentationImages/doitlive.jpg"/></div></a></p>
+<a href="https://r900-4.as.utexas.edu:9999/notebooks/Quick%20Demo.ipynb">
+<div class="stretch">
+<img src="PresentationImages/doitlive.jpg"/>
+</div>
+<p></a></p>
 </div>
 </div>
 </div></section>
@@ -1979,8 +2056,9 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="notebook-workflows-the-big-picture">Notebook Workflows: The Big Picture</h1>
-<div class="stretch"><img src="PresentationImages/IPynbWorkflows.png"/></div>
-
+<div class="stretch">
+<img src="PresentationImages/IPynbWorkflows.png"/>
+</div>
 <p><small>Not covered today but cool; clustering capabilities</small></p>
 </div>
 </div>
@@ -1994,12 +2072,13 @@ div.output_prompt {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="how-i-fell-report-workflow-v1">How I Fell: Report Workflow v1</h1>
-<div class="stretch"><img src="PresentationImages/original_report_flow.png"/></div>
-
-<p>Problems: </p>
+<div class="stretch">
+<img src="PresentationImages/original_report_flow.png"/>
+</div>
+<p>Problems:</p>
 <ul>
 <li>slow (read whole data file each time, lots of context switching)</li>
-<li>version controlled analysis, but not commentary, difficult to &#39;go back to&#39;</li>
+<li>version controlled analysis, but not commentary, difficult to 'go back to'</li>
 <li>Automating requires non-trivial additional dev</li>
 </ul>
 </div>
@@ -2013,10 +2092,9 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="report-workflow-now-">Report Workflow <code>now()</code></h1>
+<h1 id="report-workflow-now">Report Workflow <code>now()</code></h1>
 <p>Speedups primarily from no context switching, interactivity, and reusable data loading.</p>
-<p><img style="float:left;" src="PresentationImages/now_report_flow.png"/>
-<img style="float:right;" src="PresentationImages/iteration_diffs.png"/></p>
+<p><img style="float:left;" src="PresentationImages/now_report_flow.png"/> <img style="float:right;" src="PresentationImages/iteration_diffs.png"/></p>
 <p>Reproducible, literate, annotatable, <em>auditable</em>.</p>
 </div>
 </div>
@@ -2031,7 +2109,9 @@ div.output_prompt {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="iterative-coding-example">Iterative Coding Example</h1>
 <p>&quot;What are the most popular links being tweeted about #linuxcon?&quot;</p>
-<div class="stretch"><img src="PresentationImages/linuxcon_tweets.png"/></div>
+<div class="stretch">
+<img src="PresentationImages/linuxcon_tweets.png"/>
+</div>
 </div>
 </div>
 </div></section>
@@ -2043,9 +2123,13 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="let-s-start-here">Let&#39;s start here</h3>
+<h3 id="lets-start-here">Let's start here</h3>
 <p>This (very solid) book is written largely with Notebook, and you can download the <code>.ipynb</code> files!</p>
-<p><a href="http://shop.oreilly.com/product/0636920030195.do"><div class="stretch"><img src="PresentationImages/MiningSocialWeb.jpg"/></div></a></p>
+<a href="http://shop.oreilly.com/product/0636920030195.do">
+<div class="stretch">
+<img src="PresentationImages/MiningSocialWeb.jpg"/>
+</div>
+<p></a></p>
 </div>
 </div>
 </div></section>
@@ -2092,7 +2176,7 @@ In&nbsp;[1]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="interactive-example-search-for-linuxcon-">Interactive Example: Search for &#39;#linuxcon&#39;</h1>
+<h1 id="interactive-example-search-for-linuxcon">Interactive Example: Search for '#linuxcon'</h1>
 </div>
 </div>
 </div>
@@ -2182,7 +2266,7 @@ In&nbsp;[3]:
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="useful-things-to-note">Useful things to note</h1>
 <ul>
-<li>Now we have a <code>statuses</code> list that&#39;s stored in our kernel. No hitting twitter rate limits.</li>
+<li>Now we have a <code>statuses</code> list that's stored in our kernel. No hitting twitter rate limits.</li>
 <li>I got that code from the mining the social web book, but I have no idea what to do next. We can explore.</li>
 </ul>
 </div>
@@ -2566,7 +2650,7 @@ In&nbsp;[7]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>That looks plausible. Let&#39;s try applying that to all our results.</p>
+<p>That looks plausible. Let's try applying that to all our results.</p>
 </div>
 </div>
 </div><div class="fragment">
@@ -2624,8 +2708,7 @@ In&nbsp;[8]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Huh, not great, if we use the <code>text</code> it looks like things get truncated. (<code>\u2026</code> is … in unicode, what you see when a tweet trails off.)
-Looking at the JSON again, it looks like a lot of these have <code>[&#39;entities&#39;][&#39;urls&#39;][(list)][&#39;expanded_url&#39;]</code>, let&#39;s try for those.</p>
+<p>Huh, not great, if we use the <code>text</code> it looks like things get truncated. (<code>\u2026</code> is … in unicode, what you see when a tweet trails off.) Looking at the JSON again, it looks like a lot of these have <code>['entities']['urls'][(list)]['expanded_url']</code>, let's try for those.</p>
 </div>
 </div>
 </div>
@@ -2761,7 +2844,7 @@ u&apos;http://www.linuxtoday.com/developer/what-the-linux-foundation-does-for-li
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="interactive-example-counting-url-s">Interactive Example: Counting URL&#39;s</h1>
+<h1 id="interactive-example-counting-urls">Interactive Example: Counting URL's</h1>
 </div>
 </div>
 </div>
@@ -2867,20 +2950,20 @@ In&nbsp;[12]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="why-was-that-cool-">Why was that cool?</h1>
+<h1 id="why-was-that-cool">Why was that cool?</h1>
 <ul>
-<li>Interactive &amp; Exploratory. <ul>
+<li>Interactive &amp; Exploratory.
+<ul>
 <li>Scroll back up, re-review JSON, go another route</li>
-</ul>
-</li>
-<li>Cached all the things<ul>
+</ul></li>
+<li>Cached all the things
+<ul>
 <li>Not hitting twitter a bunch (rate limits, etc)</li>
 <li>Static data set (not changing every time you run the code)</li>
 <li>Can even keep developing while on conference wifi (<em>oohhhhhh</em>)</li>
-</ul>
-</li>
+</ul></li>
 <li>Easy to keep around as a log for future experiments</li>
-<li>Easy to take that learning and &#39;bake&#39; it into something more permanent</li>
+<li>Easy to take that learning and 'bake' it into something more permanent</li>
 </ul>
 </div>
 </div>
@@ -2893,8 +2976,10 @@ In&nbsp;[12]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="the-ipython-in-ipython-notebook-i-nteractive-python">The &quot;IPython&quot; in &quot;IPython Notebook&quot;`: I<em>nteractive</em> Python</h1>
-<div class="stretch"><img src="PresentationImages/IPython_v_Notebook_v2.png"/></div>
+<h1 id="the-ipython-in-ipython-notebook-interactive-python">The &quot;IPython&quot; in &quot;IPython Notebook&quot;`: I<em>nteractive</em> Python</h1>
+<div class="stretch">
+<img src="PresentationImages/IPython_v_Notebook_v2.png"/>
+</div>
 </div>
 </div>
 </div></section>
@@ -2907,7 +2992,9 @@ In&nbsp;[12]:
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="the-future">The Future</h1>
-<div class="stretch"><img src="PresentationImages/jupyter.png"/></div>
+<div class="stretch">
+<img src="PresentationImages/jupyter.png"/>
+</div>
 </div>
 </div>
 </div></section>
@@ -2919,31 +3006,26 @@ In&nbsp;[12]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="skills-port-to-the-repl">Skills port to the REPL</h1>
-<pre><code>$ ipython
-Python 2.7.6 (default, Jan 28 2014, 10:24:42)
+<h1 id="skills-port-to-the-ipython-console">Skills port to the IPython console</h1>
+<pre><code>[jhummel@r900-4 ~]$ ipy
+Python 2.7.8 |Anaconda 2.0.1 (64-bit)| (default, Aug 21 2014, 18:22:21) 
 Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
 
-IPython 3.0.0-dev -- An enhanced Interactive Python.
+IPython 2.2.0 -- An enhanced Interactive Python.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://binstar.org
 ?         -&gt; Introduction and overview of IPython&#39;s features.
 %quickref -&gt; Quick reference.
 help      -&gt; Python&#39;s own help system.
 object?   -&gt; Details about &#39;object&#39;, use &#39;object??&#39; for extra details.
 
-In [1]: import webbrowser
+In [1]: import pyGadget as pyg
 
-In [2]: webbrowser.
-webbrowser.BackgroundBrowser    webbrowser.MacOSX               webbrowser.open_new_tab
-webbrowser.BaseBrowser          webbrowser.MacOSXOSAScript      webbrowser.os
-webbrowser.Chrome               webbrowser.Mozilla              webbrowser.register
-webbrowser.Chromium             webbrowser.Netscape             webbrowser.register_X_browsers
-webbrowser.Elinks               webbrowser.Opera                webbrowser.shlex
-webbrowser.Error                webbrowser.UnixBrowser          webbrowser.stat
-webbrowser.Galeon               webbrowser.get                  webbrowser.subprocess
-webbrowser.GenericBrowser       webbrowser.main                 webbrowser.sys
-webbrowser.Grail                webbrowser.open                 webbrowser.time
-webbrowser.Konqueror            webbrowser.open_new
-</code></pre>
+In [2]: pyg.
+pyg.analyze      pyg.hdf5         pyg.sim          pyg.units
+pyg.constants    pyg.multiplot    pyg.sink         pyg.visualize
+pyg.coordinates  pyg.nbody        pyg.snapshot     
+pyg.halo         pyg.plotting     pyg.sph          </code></pre>
 </div>
 </div>
 </div></section>
@@ -2957,7 +3039,9 @@ webbrowser.Konqueror            webbrowser.open_new
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="interactive-gotcha-single-namespace">Interactive Gotcha: Single Namespace</h1>
 <p>As you recall:</p>
-<p><img src="PresentationImages/03_Process.png" alt="Remember Me"></p>
+<div class="figure">
+<img src="PresentationImages/03_Process.png" alt="Remember Me" /><p class="caption">Remember Me</p>
+</div>
 </div>
 </div>
 </div>
@@ -2966,7 +3050,7 @@ webbrowser.Konqueror            webbrowser.open_new
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="so-what-happens-when-you-do-">So what happens when you do...</h1>
+<h1 id="so-what-happens-when-you-do...">So what happens when you do...</h1>
 </div>
 </div>
 </div>
@@ -3183,12 +3267,11 @@ Automagic is ON, % prefix IS NOT needed for line magics.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="don-t-panic">Don&#39;t Panic</h3>
+<h3 id="dont-panic">Don't Panic</h3>
 <pre><code>%%writefile?
 
     %writefile [-a] filename
-    Write the contents of the cell to a file.
-</code></pre>
+    Write the contents of the cell to a file.</code></pre>
 </div>
 </div>
 </div></section>
@@ -3201,7 +3284,7 @@ Automagic is ON, % prefix IS NOT needed for line magics.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="exporting">Exporting</h1>
-<p><code>ipynb format</code> is clean, readable JSON, which inlines any output results, including base64&#39;d images.</p>
+<p><code>ipynb format</code> is clean, readable JSON, which inlines any output results, including base64'd images.</p>
 <pre><code>...
 {
  &quot;cell_type&quot;: &quot;markdown&quot;,
@@ -3214,8 +3297,7 @@ Automagic is ON, % prefix IS NOT needed for line magics.
   &quot;# Magic can be magical&quot;
  ]
 },
-...
-</code></pre>
+...</code></pre>
 </div>
 </div>
 </div></section>
@@ -3236,9 +3318,9 @@ Automagic is ON, % prefix IS NOT needed for line magics.
 <li><a href="http://localhost:8888/notebooks/Graphite%20Time%20Series.ipynb">Data Analysis</a>, <a href="http://localhost:8888/notebooks/PortlandCrime.ipynb">Portland Example</a></li>
 <li><a href="http://127.0.0.1:8888/notebooks/Apache_log.ipynb">Web Logs</a></li>
 <li><a href="http://127.0.0.1:8888/notebooks/xkcd1313.ipynb">Blogging</a></li>
-<li>Wiki&#39;ing...</li>
+<li>Wiki'ing...</li>
 </ul>
-<p>We won&#39;t go into them all for time, but a few highlights:</p>
+<p>We won't go into them all for time, but a few highlights:</p>
 </div>
 </div>
 </div></section>
@@ -3251,9 +3333,9 @@ Automagic is ON, % prefix IS NOT needed for line magics.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="use-case-data-analysis">Use Case: Data Analysis</h1>
-<p>This is the gateway drug that gets many people into IPython Notebook. It&#39;s the real sweet spot between what makes Python great (pandas, scikit*, numpy, matplotlib, etc) and IPython Notebook great (Literate, Visual, Interactive, Iterative.)</p>
-<p><a href="http://localhost:8888/notebooks/PortlandCrime.ipynb"><img src="PresentationImages/bigdata.jpg" alt="big data"></a></p>
-<p><small>Did I permanenently ruin your ability to hear the term &#39;big data&#39; without thinking of this? You&#39;re welcome.</small></p>
+<p>This is the gateway drug that gets many people into IPython Notebook. It's the real sweet spot between what makes Python great (pandas, scikit*, numpy, matplotlib, etc) and IPython Notebook great (Literate, Visual, Interactive, Iterative.)</p>
+<p><a href="http://localhost:8888/notebooks/PortlandCrime.ipynb"><img src="PresentationImages/bigdata.jpg" alt="big data" /></a></p>
+<p><small>Did I permanenently ruin your ability to hear the term 'big data' without thinking of this? You're welcome.</small></p>
 </div>
 </div>
 </div></section>
@@ -3266,8 +3348,8 @@ Automagic is ON, % prefix IS NOT needed for line magics.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="use-case-code-mentorship">Use Case: Code Mentorship</h1>
-<p><a href="http://127.0.0.1:8888/notebooks/FunWithSets.ipynb"><img src="PresentationImages/pairon.jpg" alt="Pairon"></a></p>
-<p>Because you can&#39;t always pair...</p>
+<p><a href="http://127.0.0.1:8888/notebooks/FunWithSets.ipynb"><img src="PresentationImages/pairon.jpg" alt="Pairon" /></a></p>
+<p>Because you can't always pair...</p>
 </div>
 </div>
 </div></section>
@@ -3279,8 +3361,8 @@ Automagic is ON, % prefix IS NOT needed for line magics.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="use-case-documentation-runbooks">Use Case: Documentation &amp; Runbooks</h1>
-<p><a href="http://127.0.0.1:8888/notebooks/Command%20Line%20Demo.ipynb"><img src="PresentationImages/disturbing_documentation.jpg" alt="disturbing"></a></p>
+<h1 id="use-case-document-all-the-things">Use Case: Document ALL THE THINGS</h1>
+<p><a href="http://127.0.0.1:8888/notebooks/Command%20Line%20Demo.ipynb"><img src="PresentationImages/disturbing_documentation.jpg" alt="disturbing" /></a></p>
 </div>
 </div>
 </div></section>
@@ -3294,7 +3376,9 @@ Automagic is ON, % prefix IS NOT needed for line magics.
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="use-case-wiki-publishing">Use Case: Wiki Publishing</h1>
 <p>Also can work for HTML emails, etc.</p>
-<div class="stretch"><img src="PresentationImages/WikiConversion.png"/></div>
+<div class="stretch">
+<img src="PresentationImages/WikiConversion.png"/>
+</div>
 </div>
 </div>
 </div></section>
@@ -3307,14 +3391,16 @@ Automagic is ON, % prefix IS NOT needed for line magics.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="use-case-blogging">Use Case: Blogging</h1>
-<p>When the guy who wrote my <a href="http://aima.cs.berkeley.edu/">AI Textbook</a> uses it, you know it&#39;s good software!</p>
-<p><a href="http://127.0.0.1:8888/notebooks/xkcd1313.ipynb"><div class="stretch"><img src="PresentationImages/XCKDBlog.png"/></div></a></p>
+<p>It turns out this is super easy!</p>
+<a href="http://hummel.github.io/">
+<div class="stretch">
+<img src="PresentationImages/blog_screenshot.png"/>
+</div>
+<p></a></p>
 <p>See <a href="http://www.damian.oquanta.info/posts/ipython-plugin-for-nikola-updated.html">nikola</a> or <a href="https://github.com/danielfrg/pelican-ipythonnb">pelican</a> for automated ways to blog.</p>
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
+</div><div style=display:none>
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -3322,45 +3408,34 @@ Automagic is ON, % prefix IS NOT needed for line magics.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="clearing-up-the-clutter">Clearing up the clutter</h1>
-<p>Lots of the slides had more code than we might want in a report; several approaches.
-It&#39;s on the notebook roadmap to add an &#39;official&#39; way to do this.</p>
+<p>Lots of the slides had more code than we might want in a report; several approaches. It's on the notebook roadmap to add an 'official' way to do this.</p>
 <ul>
 <li><code>%run</code> magic runs another notebook, pulling variables in</li>
 <li>Move code to a local module (<code>ipython nbconvert --to python</code> &amp; refactor) or build a real module (Tip: <code>%load_ext autoreload; %autoreload 2</code> or <code>%aimport mymodule</code>)</li>
 <li>Use a custom output template</li>
-<li>Easiest: Hide cells with a <code>custom.css</code>. (<strong>Annoying caveat!</strong>)</li>
+<li><p>Easiest: Hide cells with a <code>custom.css</code>. (<strong>Annoying caveat!</strong>)</p>
+<p>/* Boss Mode */ div.input { display: none; }</p>
+<p>div.output_prompt { display: none; }</p>
+<p>div.output_text { display: none; }</p></li>
 </ul>
-<pre><code>/* Boss Mode */
-div.input {
-    display: none;
-}
-
-div.output_prompt {
-    display: none;
-}
-
-div.output_text {
-    display: none;
-}
-</code></pre>
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
+</div>
+    </div><div style=display:none>
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="boss-mode-html-pdf-output">Boss Mode HTML -&gt; PDF Output</h1>
-<div class="stretch"><img src="PresentationImages/bossmode.png"/></div>
+<h1 id="boss-mode-html---pdf-output">Boss Mode HTML -&gt; PDF Output</h1>
+<div class="stretch">
+<img src="PresentationImages/bossmode.png"/>
 </div>
 </div>
-</div></section>
-    </section><section>
-    <section>
+</div>
+</div>
+    </div><div style=display:none>
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -3368,10 +3443,9 @@ div.output_text {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="customized-displays">Customized Displays</h1>
-<p>Hey, we have HTML to play with!
-There are many ways to display prettier things inline.</p>
+<p>Hey, we have HTML to play with! There are many ways to display prettier things inline.</p>
 <ul>
-<li><a href="http://epmoyer.github.io/ipy_table/">ipy_table</a> does nice HTML Table display of list/tab data which isn&#39;t worth putting into pandas.</li>
+<li><a href="http://epmoyer.github.io/ipy_table/">ipy_table</a> does nice HTML Table display of list/tab data which isn't worth putting into pandas.</li>
 <li><a href="http://nbviewer.ipython.org/github/ipython/ipython/blob/1.x/examples/notebooks/Part%205%20-%20Rich%20Display%20System.ipynb">IPython Display System</a> covers many more capabilities in detail</li>
 </ul>
 <p>Simple Custom HTML:</p>
@@ -3379,11 +3453,11 @@ There are many ways to display prettier things inline.</p>
 
 def foo():
     raw_html = &quot;&lt;h1&gt;Yah, rendered HTML&lt;/h1&gt;&quot;
-    return HTML(raw_html)
-</code></pre>
+    return HTML(raw_html)</code></pre>
 </div>
 </div>
-</div></section>
+</div>
+    </div></section>
     </section><section>
     <section>
     
@@ -3393,8 +3467,7 @@ def foo():
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="rich-objects">Rich Objects</h1>
-<p>You can also define additional <code>__repr__()</code>-type methods on custom objects.
-This has all kinds of fun possibilities.</p>
+<p>You can also define additional <code>__repr__()</code>-type methods on custom objects. This has all kinds of fun possibilities.</p>
 <p><code>_repr_html_()</code>, <code>svg</code>, <code>png</code>, <code>jpeg</code>, <code>html</code>, <code>javascript</code>, <code>latex</code>.</p>
 </div>
 </div>
@@ -3451,126 +3524,11 @@ In&nbsp;[20]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="automated-testing">Automated Testing</h1>
-<p>Many options for testing, nothing too formal yet. These could easily be run by Travis/Jenkins/... </p>
-<ul>
-<li><a href="https://gist.github.com/timo/2621679">This one</a> discovers cells as <code>pytest</code> tests. (needs an update for IPython 2.0)</li>
-<li><a href="https://gist.github.com/minrk/2620735">This one</a> runs the cells and compares the output with what&#39;s stored in the notebook.</li>
-<li><a href="https://gist.github.com/gtfierro/9081920">This one</a> just runs the cells and reports any exceptions.</li>
-</ul>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<pre><code>$ ./checkipnb.py xkcd1313.ipynb                                                                                  
-    running xkcd1313.ipynb
-    .........
-    FAILURE:
-    def test1():
-        assert subparts('^it$&#39;) == {&#39;^&#39;, &#39;i&#39;, &#39;t&#39;, &#39;$', '^i', 'it', 't$&#39;, &#39;^it&#39;, &#39;it$', '^it$&#39;}
-test1()
------
-raised:
----------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-&lt;ipython-input-11-a4492b0ec0d5&gt; in &lt;module&gt;()
----&gt; 26 test1()
-
-&lt;ipython-input-11-a4492b0ec0d5&gt; in test1()
-
-     22     assert words(&#39;This is a TEST this is&#39;) == {&#39;this&#39;, &#39;is&#39;, &#39;a&#39;, &#39;test&#39;}
----&gt; 23     assert lines(&#39;Testing / 1 2 3 / Testing over&#39;) == {&#39;TESTING&#39;, &#39;1 2 3&#39;, &#39;TESTING OVER&#39;}
-
-NameError: global name &#39;lines&#39; is not defined
-.............
-ran notebook 
-    ran  22 cells
-      1 cells raised exceptions
-</code></pre>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="ipython-notebook-customization">IPython (&amp; Notebook) Customization</h1>
-<p><img src="PresentationImages/CustomizationMap.png" alt="custommap"></p>
+<div class="figure">
+<img src="PresentationImages/CustomizationMap.png" alt="custommap" /><p class="caption">custommap</p>
+</div>
 <p>See more on <a href="http://ipython.org/ipython-doc/dev/config/intro.html#profiles">Profiles</a>, <a href="https://github.com/ipython-contrib/IPython-notebook-extensions/wiki">Javascript Extensions</a>, <a href="https://github.com/ipython/ipython/wiki/Extensions-Index">IPython Extensions</a>, and <a href="http://www.damian.oquanta.info/posts/change-the-ipython-slides-defaults-with-an-ipython-config-file.html">nbconvert Templates</a></p>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[11]:
-</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre><span class="n">profile</span> <span class="o">=</span> <span class="err">!</span><span class="n">ipython</span> <span class="n">locate</span> <span class="n">profile</span>
-<span class="k">print</span> <span class="n">profile</span>
-<span class="n">custom_js</span> <span class="o">=</span> <span class="n">profile</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">&quot;/static/custom/custom.js&quot;</span>
-<span class="k">print</span> <span class="n">custom_js</span>
-<span class="o">!</span>head <span class="nv">$custom_js</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-[&apos;/Users/jbarratt/.ipython/profile_default&apos;]
-/Users/jbarratt/.ipython/profile_default/static/custom/custom.js
-// leave at least 2 line with only a star on it below, or doc generation fails
-/**
- *
- *
- * Placeholder for custom user javascript
- * mainly to be overridden in profile/static/custom/custom.js
- * This will always be an empty file in IPython
- *
- * User could add any javascript in the &#96;profile/static/custom/custom.js&#96; file
- * (and should create it if it does not exist).
-
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Thankfully you can organize them in unique files, and just <code>require</code> them in <code>custom.js</code></p>
-<pre><code>$([IPython.events]).on(&#39;app_initialized.NotebookApp&#39;, function(){
-    require([&#39;/static/custom/clean_start.js&#39;]);
-    require([&#39;/static/custom/styling/css-selector/main.js&#39;]);
-})
-</code></pre>
 </div>
 </div>
 </div></section>
@@ -3591,8 +3549,8 @@ In&nbsp;[11]:
                 icon : &#39;icon-list-alt&#39;,
                 callback : toggle
             }
-      ]);
-</code></pre><h3 id="and-more-">And more...</h3>
+      ]);</code></pre>
+<h3 id="and-more...">And more...</h3>
 <p>Turns out, a lot! You can execute anything you can run in an IPython Notebook cell.</p>
 </div>
 </div>
@@ -3603,8 +3561,8 @@ In&nbsp;[11]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<pre><code>IPython.notebook.kernel.execute(&quot;!rm -rf /&quot;)
-</code></pre><p><a href="http://localhost:8888/notebooks/Javascript%20Demo.ipynb#">Demo</a> <small>Of a less scary example</small></p>
+<pre><code>IPython.notebook.kernel.execute(&quot;!rm -rf /&quot;)</code></pre>
+<p><a href="http://localhost:8888/notebooks/Javascript%20Demo.ipynb#">Demo</a> <small>Of a less scary example</small></p>
 </div>
 </div>
 </div>
@@ -3617,9 +3575,11 @@ In&nbsp;[11]:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="don-t-forget-custom-css">Don&#39;t forget custom.css</h1>
+<h1 id="dont-forget-custom.css">Don't forget custom.css</h1>
 <p>For example, <a href="https://github.com/nsonnad/base16-ipython-notebook">base16 color schemes</a></p>
-<div class="stretch"><img src="PresentationImages/ocean-dark.png"/></div>
+<div class="stretch">
+<img src="PresentationImages/ocean-dark.png"/>
+</div>
 </div>
 </div>
 </div></section>
@@ -3632,78 +3592,11 @@ In&nbsp;[11]:
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="sharing-notebooks">Sharing Notebooks</h1>
-<div class="stretch"><img src="PresentationImages/NBViewer.png"/></div>
-</div>
-</div>
-</div></section>
-    </section><section>
-    <section>
-    
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="personal-archive">Personal Archive</h1>
-<p>One useful thing with having lots of notebooks around is high context sample code for solving future problems.</p>
-<p>I wrote a simple tool (only works on OSX for now, yikes): <a href="http://serialized.net/2014/07/mining-your-ipython-notebooks-with-nbgrep/">nbgrep</a></p>
+<div class="stretch">
+<img src="PresentationImages/NBViewer.png"/>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">
-In&nbsp;[19]:
-</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class="highlight"><pre><span class="o">!</span>nbgrep seaborn
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-/Users/jbarratt/work/ipn2/Graphite Time Series.ipynb:
-
-<span class="ansiblue">import</span> </span></span></span><span class="ansicyan">seaborn</span> </span></span><span class="ansiblue">as</span> </span></span></span><span class="ansicyan">sns</span>
-
-
-/Users/jbarratt/work/ipython_notebook_presentation/Graphite Time Series.ipynb:
-
-</span><span class="ansiblue">import</span> </span></span></span><span class="ansicyan">seaborn</span> </span></span><span class="ansiblue">as</span> </span></span></span><span class="ansicyan">sns</span>
-
-
-/Users/jbarratt/work/mt/hash_buckets/host_hashing.ipynb:
-
-</span><span class="ansiblue">import</span> </span></span></span><span class="ansicyan">seaborn</span> </span></span><span class="ansiblue">as</span> </span></span></span><span class="ansicyan">sns</span>
-
-
-/Users/jbarratt/work/notebookcookbook/Graphite Time Series.ipynb:
-
-</span><span class="ansiblue">import</span> </span></span></span><span class="ansicyan">seaborn</span> </span></span><span class="ansiblue">as</span> </span></span></span><span class="ansicyan">sns</span>
-
-
-/Users/jbarratt/work/notebookcookbook/ipython_notebook_presentation/Graphite Time Series.ipynb:
-
-</span><span class="ansiblue">import</span> </span></span></span><span class="ansicyan">seaborn</span> </span></span><span class="ansiblue">as</span> </span></span></span><span class="ansicyan">sns</span>
-
-
-</span>
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div><div style=display:none>
     
 <div class="cell border-box-sizing text_cell rendered">
@@ -3745,7 +3638,9 @@ In&nbsp;[19]:
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="it-came-from-inside-the-notebook">IT CAME FROM INSIDE THE NOTEBOOK</h1>
-<p><img src="PresentationImages/cant_stop_top.gif" alt="cant stop cant stop the top"></p>
+<div class="figure">
+<img src="PresentationImages/cant_stop_top.gif" alt="cant stop cant stop the top" /><p class="caption">cant stop cant stop the top</p>
+</div>
 <ul>
 <li>Highly technical decks can be created quickly</li>
 <li>Collaboration features are still quite useful</li>
@@ -3764,16 +3659,16 @@ In&nbsp;[19]:
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="building-slides">Building slides</h1>
 <ul>
-<li>Turn on the &#39;slideshow&#39; cell toolbar</li>
-<li>Types:<ul>
+<li>Turn on the 'slideshow' cell toolbar</li>
+<li>Types:
+<ul>
 <li>Slide: start a new slide</li>
 <li><code>-</code>: Continue a slide</li>
-<li>Sub-Slide: Make a &#39;down&#39; slide</li>
-<li>Fragment: Make a &#39;bullet&#39; type incoming slide</li>
+<li>Sub-Slide: Make a 'down' slide</li>
+<li>Fragment: Make a 'bullet' type incoming slide</li>
 <li>Skip: keep in the notebook, not the deck</li>
 <li>Notes: speaker notes</li>
-</ul>
-</li>
+</ul></li>
 </ul>
 </div>
 </div>
@@ -3799,11 +3694,14 @@ In&nbsp;[1]:
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-[NbConvertApp] Using existing profile dir: u&apos;/Users/jbarratt/.ipython/profile_default&apos;
-[NbConvertApp] Converting notebook 00 Presentation.ipynb to slides
-[NbConvertApp] Support files will be in 00 Presentation_files/
+[NbConvertApp] Using existing profile dir: u&apos;/home/jhummel/.ipython/profile_default&apos;
+[NbConvertApp] Converting notebook Presentation.ipynb to slides
+[NbConvertApp] Support files will be in Presentation_files/
 [NbConvertApp] Loaded template slides_reveal.tpl
-[NbConvertApp] Writing 188767 bytes to 00 Presentation.slides.html
+/home/jhummel/anaconda/lib/python2.7/site-packages/IPython/nbconvert/filters/markdown.py:78: UserWarning: Node.js 0.9.12 or later wasn&apos;t found.
+Nbconvert will try to use Pandoc instead.
+  &quot;Nbconvert will try to use Pandoc instead.&quot;)
+[NbConvertApp] Writing 266642 bytes to Presentation.slides.html
 
 </pre>
 </div>
@@ -3828,21 +3726,22 @@ In&nbsp;[1]:
 </ul>
 <h2 id="installing">Installing</h2>
 <ul>
-<li><code>$ pip install ipython[all]</code> (<code>brew install python</code>)    <strong>OR</strong></li>
 <li><a href="http://continuum.io/downloads">Anaconda</a> <strong>OR</strong></li>
-<li><a href="https://github.com/mingfang/docker-ipython">docker-ipython</a><ul>
+<li><code>$ pip install ipython[all]</code> (<code>brew install python</code>) <strong>OR</strong></li>
+<li><a href="https://github.com/mingfang/docker-ipython">docker-ipython</a>
+<ul>
 <li>Preloaded with lots of sometimes challenging-to-install packages like Pattern, NLTK, Pandas, NumPy, SciPy, Numba, Biopython...</li>
-</ul>
-</li>
+</ul></li>
 </ul>
 <h2 id="learning-more">Learning More</h2>
 <ul>
-<li>Slides &amp; example notebooks will be up on the OSCON site later.</li>
+<li>Slides will be up on the GSPS site later.</li>
+<li>Complete source for this presentation is available on <a href="https://github.com/OttoStruve/ipython_notebook_presentation">github</a>!</li>
 <li><a href="https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks">A Gallery of Interesting IPython Notebooks</a></li>
 <li><a href="https://github.com/ipython-contrib/IPython-notebook-extensions/wiki">Extensions</a></li>
 <li>nbviewer (good way to discover organically)</li>
 <li>Pandas/numpy, Statsmodels, Matplotlib, bokeh, vincent, scikit-learn, scikit-image, .... (F150!)</li>
-<li>Talk to me! @jbarratt on twitter, <code>jbarratt@serialized.net</code></li>
+<li>Talk to me!</li>
 </ul>
 </div>
 </div>
@@ -3858,9 +3757,9 @@ In&nbsp;[1]:
 <h3 id="credits">Credits</h3>
 <p><small></p>
 <ul>
-<li>Quill designed by <a href="http://www.thenounproject.com/SimpleIcons">Simple Icons</a> from the <a href="http://www.thenounproject.com">Noun Project</a>, </li>
-<li>Settings designed by <a href="http://www.thenounproject.com/clementthorez">Clément thorez</a> from the <a href="http://www.thenounproject.com">Noun Project</a>, </li>
-<li>Photo designed by <a href="http://www.thenounproject.com/SimpleIcons">Simple Icons</a> from the <a href="http://www.thenounproject.com">Noun Project</a>, </li>
+<li>Quill designed by <a href="http://www.thenounproject.com/SimpleIcons">Simple Icons</a> from the <a href="http://www.thenounproject.com">Noun Project</a>,</li>
+<li>Settings designed by <a href="http://www.thenounproject.com/clementthorez">Clément thorez</a> from the <a href="http://www.thenounproject.com">Noun Project</a>,</li>
+<li>Photo designed by <a href="http://www.thenounproject.com/SimpleIcons">Simple Icons</a> from the <a href="http://www.thenounproject.com">Noun Project</a>,</li>
 <li>Recurring Edit designed by <a href="http://www.thenounproject.com/lemonliu">Lemon Liu</a> from the <a href="http://www.thenounproject.com">Noun Project</a></li>
 <li>Cover page texture from <a href="https://www.flickr.com/photos/grungetextures/4200664412/in/photolist-7pcvbu-5Migu9-8aMMJD-5AiUhi-8CCXzG-fVXo-mRvNvg-4YrNGd-cD7bJQ-6thwGL-52DkmT-6pRT2i-6kLpc8-9pwEpm-6VaRkh-jEwc9f-7xYwSY-bb9ePk-3ywCyW-fEQaH-dJ1KQ-6wwmgT-7vRRUN-2BN6tk-6iPoTE-oesZ8p-5Aobef-5AoaZj-4hpdQy-fcc4su-63hB4Y-7rcrX6-59gmSs-5EeZsz-5eGyrF-4xVw4h-a9wz4Z-DXDK-52Hzbq-6umvnC-gDMTLt-jB2RSp-8f4baS-bqWQBp-aDBYnh-8UHpv9-a9fnad-wGTa9-nQfNsR-dDskMP">grungetextures</a> via Flickr.</li>
 </ul>
@@ -3898,7 +3797,7 @@ dependencies: [
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
